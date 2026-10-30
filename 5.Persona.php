@@ -2,9 +2,7 @@
 
 session_start();
 
-
 // CLASE PERSONA
-
 
 class Persona
 {
@@ -35,9 +33,7 @@ class Persona
     }
 }
 
-
 // CLASE ESTUDIANTE
-
 
 class Estudiante extends Persona
 {
@@ -87,9 +83,7 @@ class Estudiante extends Persona
     }
 }
 
-
 // CLASE DOCENTE
-
 
 class Docente extends Persona
 {
@@ -135,18 +129,13 @@ class Docente extends Persona
     }
 }
 
-
 // CREAR LA LISTA
-
 
 if (!isset($_SESSION["lista"])) {
     $_SESSION["lista"] = [];
 }
 
-
-
 // GUARDAR LOS DATOS
-
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -194,7 +183,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 ?>
-
 
 <!DOCTYPE html>
 
@@ -260,7 +248,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <br><br>
 
 
-
     <!-- CAMPOS DEL ESTUDIANTE -->
 
     <div id="estudiante" style="display:none;">
@@ -317,8 +304,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <br><br>
 
     </div>
-
-
 
     <!-- CAMPOS DEL DOCENTE -->
 
@@ -377,7 +362,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <br><br>
 
     </div>
-
 
     <input type="submit" value="Guardar">
 
