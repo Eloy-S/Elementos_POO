@@ -30,28 +30,32 @@ Este repositorio contiene la resolución de los 5 problemas prácticos de **Prog
 ```text
 poo-practicas/
 ├── img/
-│   ├── problema1.png          # Captura de ejecución del Problema #1
-│   ├── problema2.png          # Captura de ejecución del Problema #2
-│   ├── problema3.png          # Captura de ejecución del Problema #3
-│   ├── problema4.png          # Captura de ejecución del Problema #4
-│   └── problema5.png          # Captura de ejecución del Problema #5
-├── problema3.php              # Clases y métodos finales (final class)
-├── problema4.php              # Constantes de clase y cálculo geométrico (Círculo)
-├── problema5.php              # Jerarquía de clases (Persona, Estudiante, Docente)
-└── README.md                  # Documentación principal
+│   ├── Ejemplo_1.png           # Captura de ejecución del Problema #1
+│   ├── Ejemplo_2.png           # Captura de ejecución del Problema #2
+│   ├── Ejemplo_3.png           # Captura de ejecución del Problema #3
+│   ├── Ejemplo_4.png           # Captura de ejecución del Problema #4
+│   ├── Ejemplo_5_registro.png  # Captura del modelo Persona
+│   ├── Ejemplo_5_estudiante.png# Captura de la clase Estudiante
+│   └── Ejemplo_5_docente.png   # Captura de la clase Docente
+├── problema1.php               # Herencia básica (Coche y CocheDeLujo)
+├── problema2.php               # Enlace estático en tiempo de ejecución (Late Static Binding)
+├── problema3.php               # Clases y métodos finales (final class)
+├── problema4.php               # Constantes de clase y cálculo geométrico (Círculo)
+├── problema5.php               # Jerarquía de clases (Persona, Estudiante, Docente)
+└── README.md                   # Documentación principal
 ```
 
 ---
 
 ## 📌 Índice de Problemas
 
-| Problema | Concepto POO Evaluado | Estado | Captura |
+| Problema | Concepto POO Evaluado | Estado | Captura Directa |
 | :---: | :--- | :---: | :---: |
-| **Problema #1** | Encapsulamiento y Herencia (`Coche` / `CocheDeLujo`) | ![Completado](https://img.shields.io/badge/Completado-brightgreen?style=flat-square) | [Ver Captura](#problema-1-herencia-básica-coche-y-cochedelujo) |
-| **Problema #2** | Vinculación Estática Tardía (`static::` vs `self::`) | ![Completado](https://img.shields.io/badge/Completado-brightgreen?style=flat-square) | [Ver Captura](#problema-2-late-static-binding-static-vs-self) |
-| **Problema #3** | Restricción de Herencia (`final class`) | ![Completado](https://img.shields.io/badge/Completado-brightgreen?style=flat-square) | [Ver Captura](#problema-3-restricción-de-herencia-final-class) |
-| **Problema #4** | Métodos y Constantes de Clase (`Circulo`) | ![Completado](https://img.shields.io/badge/Completado-brightgreen?style=flat-square) | [Ver Captura](#problema-4-cálculo-geométrico-y-constantes-circulo) |
-| **Problema #5** | Modelado e Jerarquía (`Persona`, `Estudiante`, `Docente`) | ![Completado](https://img.shields.io/badge/Completado-brightgreen?style=flat-square) | [Ver Captura](#problema-5-jerarquía-completa-persona-estudiante-y-docente) |
+| **Problema #1** | Encapsulamiento y Herencia (`Coche` / `CocheDeLujo`) | ![Completado](https://img.shields.io/badge/Completado-brightgreen?style=flat-square) | [📸 Ver Captura](#captura-p1) |
+| **Problema #2** | Vinculación Estática Tardía (`static::` vs `self::`) | ![Completado](https://img.shields.io/badge/Completado-brightgreen?style=flat-square) | [📸 Ver Captura](#captura-p2) |
+| **Problema #3** | Restricción de Herencia (`final class`) | ![Completado](https://img.shields.io/badge/Completado-brightgreen?style=flat-square) | [📸 Ver Captura](#captura-p3) |
+| **Problema #4** | Métodos y Constantes de Clase (`Circulo`) | ![Completado](https://img.shields.io/badge/Completado-brightgreen?style=flat-square) | [📸 Ver Captura](#captura-p4) |
+| **Problema #5** | Modelado e Jerarquía (`Persona`, `Estudiante`, `Docente`) | ![Completado](https://img.shields.io/badge/Completado-brightgreen?style=flat-square) | [📸 Ver Captura](#captura-p5) |
 
 ---
 
@@ -106,6 +110,11 @@ $miCoche->printCaracteristicas();
 ?>
 ```
 
+<a id="captura-p1"></a>
+#### 📸 Evidencia de Ejecución (Problema #1)
+![Ejecución Problema 1](img/Ejemplo_1.png)
+*Instanciación y uso de métodos heredados de CocheDeLujo.*
+
 ---
 
 ### Problema #2: Late Static Binding (`static::` vs `self::`)
@@ -137,6 +146,11 @@ B::otraFuncion(); // Imprime: B
 ?>
 ```
 
+<a id="captura-p2"></a>
+#### 📸 Evidencia de Ejecución (Problema #2)
+![Ejecución Problema 2](img/Ejemplo_2.png)
+*Resolución dinámica de clases con static::.*
+
 ---
 
 ### Problema #3: Restricción de Herencia (`final class`)
@@ -157,6 +171,11 @@ class CocheDeLujo extends Coche {
 }
 ?>
 ```
+
+<a id="captura-p3"></a>
+#### 📸 Evidencia de Ejecución (Problema #3)
+![Ejecución Problema 3](img/Ejemplo_3.png)
+*Manejo del error fatal por herencia rechazada.*
 
 ---
 
@@ -190,6 +209,11 @@ echo "Área del círculo:\t" . number_format($miCirculo->calcularArea(), 2, ".",
 echo "Perímetro del círculo:\t" . number_format($miCirculo->calcularPerimetro(), 2, ".", "") . "<br>";
 ?>
 ```
+
+<a id="captura-p4"></a>
+#### 📸 Evidencia de Ejecución (Problema #4)
+![Ejecución Problema 4](img/Ejemplo_4.png)
+*Cálculo formateado de área y perímetro.*
 
 ---
 
@@ -291,24 +315,12 @@ echo "La modalidad de estudio del estudiante es: " . $miEstudiante->getModalidad
 ?>
 ```
 
----
-
-## 📸 Evidencias de Ejecución (Capturas)
-
-| Problema #1: Herencia | Problema #2: Late Static Binding |
-| :---: | :---: |
-| ![Problema 1](img/problema1.png) | ![Problema 2](img/problema2.png) |
-| *Instanciación y uso de métodos heredados de CocheDeLujo.* | *Resolución dinámica de clases con static::.* |
-
-| Problema #3: Clase Final | Problema #4: Círculo |
-| :---: | :---: |
-| ![Problema 3](img/problema3.png) | ![Problema 4](img/problema4.png) |
-| *Manejo del error fatal por herencia rechazada.* | *Cálculo formateado de área y perímetro.* |
-
-| Problema #5: Jerarquía de Clases (Persona, Estudiante, Docente) |
-| :---: |
-| ![Problema 5](img/problema5.png) |
-| *Salida en pantalla con atributos de la clase base y de la clase hija.* |
+<a id="captura-p5"></a>
+#### 📸 Evidencias de Ejecución (Problema #5)
+![Registro Persona](img/Ejemplo_5_registro.png)  
+![Clase Estudiante](img/Ejemplo_5_estudiante.png)  
+![Clase Docente](img/Ejemplo_5_docente.png)  
+*Salida en pantalla con atributos de la clase base y de las clases hijas.*
 
 ---
 
